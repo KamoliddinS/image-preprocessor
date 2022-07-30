@@ -1,0 +1,7 @@
+__pycache__
+Dockerfile
+.git
+venv
+.env
+env_file.env
+*.pem
