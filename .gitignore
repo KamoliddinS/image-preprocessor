@@ -11,7 +11,7 @@ env_file.env
 
 __pycache__
 #docker container 
-Dockerfile
+
 # misc
 .DS_Store
 .env
