@@ -38,7 +38,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World or Ola"}
+    return {"Hello": "World or Olao or Assalom-u Aleykum "}
 
 
 @app.post("/upload")
