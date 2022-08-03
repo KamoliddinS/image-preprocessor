@@ -40,6 +40,8 @@ def get_liveness_model_MobileNetV2():
                                             include_top=False,
                                             weights='imagenet')
 
+
+
     # load_param_path = '../input/mobilenet_v2/xception_weights_tf_dim_ordering_tf_kernels_notop.h5'  # Offline alternative
     # pretrain_net.load_weights(load_param_path)  # Manually load the weights from the input directory
 
