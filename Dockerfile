@@ -1,11 +1,11 @@
-FROM python:3.9.13-buster
+FROM python:3.10.8-buster
 
 WORKDIR /code
 
 COPY  requirements.txt .
-RUN apt-get update && apt-get -y install cmake protobuf-compiler
-RUN pip install --no-cache-dir --upgrade -r requirements.txt
-RUN apt-get install ffmpeg libsm6 libxext6  -y
+# RUN apt-get update && apt-get -y install cmake protobuf-compiler
+# RUN pip install --no-cache-dir --upgrade -r requirements.txt
+# RUN apt-get install ffmpeg libsm6 libxext6  -y
 
 
 COPY . . 
