@@ -19,7 +19,7 @@ __pycache__
 .env.development.local
 .env.test.local
 .env.production.local
-docker-compose.yaml
+
 
 
 .vscode/settings.json
