@@ -6,7 +6,6 @@ from fastapi.responses import JSONResponse, FileResponse, StreamingResponse
 from fastapi import File, UploadFile, FastAPI, Request, status, HTTPException
 import boto3
 from dotenv import load_dotenv
-from exceptions import apiException
 import io
 from rembg import remove
 
@@ -56,10 +55,10 @@ async def remove_background2(file: UploadFile = File()):
 
 
 
-@app.exception_handler(apiException)
-def api_exception_handler(request: Request, exc: apiException):
-    return JSONResponse(
-        status_code=status.HTTP_418_IM_A_TEAPOT,
-        content={'detail': exc.name}
-    )
+# @app.exception_handler(apiException)
+# def api_exception_handler(request: Request, exc: apiException):
+#     return JSONResponse(
+#         status_code=status.HTTP_418_IM_A_TEAPOT,
+#         content={'detail': exc.name}
+#     )
 
