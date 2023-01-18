@@ -1,3 +1,4 @@
-fastapi 
-rembg
-boto3
+fastapi==0.89.1
+rembg==2.0.30
+boto3==1.26.51
+uvicorn ==0.20.0
