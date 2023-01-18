@@ -1,4 +1,4 @@
-fastapi==0.89.1
+fastapi==0.87.0
 rembg==2.0.30
 boto3==1.26.51
 uvicorn ==0.20.0
